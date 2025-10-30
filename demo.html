@@ -30,18 +30,17 @@
 
     <div id="brainText" class="firstScene">
       <div class="text right">
-        <h2>An Interactive <br> Introduction to <br> Artificial Intelligence</h2>
+        <h2>Pengantar Interaktif <br> untuk Kecerdasan Artifisial</h2>
         <hr>
-        <p><strong>Artificial neural network</strong> is a type of machine learning algorithm inspired by the human brain.</p>
-        <p>Our brains are comprised of a network of biological neurons that fire signals upon receiving stimulus, ultimately telling our bodies what function to perform.</p>
+        <p><strong>Jaringan saraf tiruan</strong> adalah salah satu jenis algoritma pembelajaran mesin yang terinspirasi dari otak manusia.</p>
+        <p>Otak kita terdiri dari jaringan neuron biologis yang memancarkan sinyal saat menerima rangsangan, pada akhirnya memberitahu tubuh kami fungsi apa yang harus dilakukan.</p>
         <p style="text-align: center"> <i>Scroll</i> <br> <i class="fas fa-angle-down fa-2x"></i></p>
       </div>
     </div>
 
     <div id="nerveText" class="scene">
       <div class="text right">
-        <p>At a more <strong>microscopic</strong> level, the dendrites of a single neuron in the brain receives inputs,
-          and fire output signals via the axon to the dendrites of other neurons, and so on.
+        <p>Pada tingkat yang lebih <strong>mikroskopis</strong>, dendrit dari satu neuron di otak menerima masukan, dan memancarkan sinyal keluar melalui akson menuju dendrit neuron lainnya, dan seterusnya.
         </p>
       </div>
     </div>
@@ -49,23 +48,23 @@
     <div id="neuron1Text" class="scene bg-grey upperLayer">
       <div class="text left">
         <h3>
-          From Biological to Artificial
+          Dari Biological ke Buatan
         </h3>
         <hr>
-        <p>An <strong>artificial neuron</strong> models a biological neuron in a simplified manner.  <br>
-          Here, the previous biological nerve system is represented by an artificial neuron with two inputs and a output.
+        <p>ASebuah <strong>neuron buatan</strong> memodelkan neuron biologis secara sederhana.  <br>
+		Di sini, sistem saraf biologis sebelumnya diwakili oleh neuron buatan dengan dua masukan dan satu keluaran.
         </p>
       </div>
     </div>
 
     <div id="neuron2Text" class="scene bg-grey upperLayer">
       <div class="text left">
-        <p>Between two neurons, the biological axon-to-dendrite connection is simplified to an <strong>edge</strong>, and
-           signals transmitted are represented with <strong>numbers</strong>.
+        <p>Antara dua neuron, koneksi biologis dari akson ke dendrite disederhanakan menjadi <strong>tepi</strong>, dan  
+		sinyal yang ditransmisikan direpresentasikan dengan <strong>angka</strong>.
         </p>
 
-        <p>The input on top is connected to the central neuron with a <strong>thick</strong> edge,
-          thus the signal is amplified by a factor of 2 when it reaches the neuron.
+        <p>Masukan di bagian atas terhubung ke neuron pusat melalui tepi yang <strong>tebal</strong>,  
+		sehingga sinyal tersebut diperkuat dengan faktor 2 saat mencapai neuron.
         </p>
 
       </div>
@@ -73,34 +72,34 @@
 
     <div id="neuron3Text" class="scene bg-grey upperLayer">
       <div class="text left">
-        <p>The input at the bottom, however, has a <strong>thinner</strong> connection to the neuron,
-          thus the signal is reduced to 2, resulting in a final signal of <strong>2 + 2 = 4</strong> received, instead of
-          3 + 2 = 5.
+        <p>Masukan di bagian bawah, bagaimanapun, memiliki koneksi yang <strong>lebih tipis</strong> ke neuron,  
+		sehingga sinyalnya dikurangi menjadi 2, menghasilkan sinyal akhir <strong>2 + 2 = 4</strong> yang diterima, bukan  
+		3 + 2 = 5.
         </p>
         <p>
-          The thickness of the edge is called <strong>weight</strong> in machine learning.
+          Ketebalan dari tepian disebut <strong>weight (bobot)</strong> dalam pembelajaran mesin.
         </p>
       </div>
     </div>
 
     <div id="neuron4Text" class="scene bg-grey upperLayer">
       <div class="text left">
-        <p>Next, the neuron processes the signal by shaking itself. In this case, doing so incremented the signal by 1.
+        <p><p>Selanjutnya, neuron memproses sinyal tersebut "mengubah" dirinya sendiri, dengan menaikkan sinyal sebesar 1.</p>
         </p>
         <p>
-          The “shakiness” of a neuron is called <strong>bias</strong>, which can both increase or decrease the value of the signal by any set amount.
+         “Ubahan” dari sebuah neuron disebut <strong>bias</strong>, yang dapat menambah atau mengurangi nilai sinyal sebesar nilai yang ditetapkan.
         </p>
       </div>
     </div>
 
     <div id="neuron5Text" class="scene bg-grey upperLayer">
       <div class="text left">
-        <p>Finally, an <strong>activation function</strong> is used to simulate how "fired" the neuron is.</p>
+        <p>Akhirnya, sebuah <strong>fungsi aktivasi</strong> digunakan untuk mensimulasikan seberapa "terpicu" neuron tersebut.</p>
         <p>
-          <strong>ReLU</strong>, a type of activation functions, is used here. It preserves the signal value if it is 0 or greater.
+          <strong>ReLU</strong>, sejenis fungsi aktivasi, digunakan di sini. Ia mempertahankan nilai sinyal jika nilainya 0 atau lebih besar.
         </p>
         <p>
-          In our case, a positive signal would fully fire the neuron, so the value 5 is preserved and becomes the final output of the neuron.
+          Dalam kasus kita, sinyal positif akan mengaktifkan neuron sepenuhnya, sehingga nilai 5 dipertahankan dan menjadi output akhir neuron.
         </p>
       </div>
     </div>
@@ -108,15 +107,15 @@
     <div id="appanana1Text" class="scene topLayer bg-white">
       <div class="text right">
         <h3>
-          Apple? Banana?
+          Apel? Pisang?
         </h3>
         <hr>
         <p>
-          Using an artificial neuron with two inputs, we can build the simplest neural network: <strong> perceptron</strong>.
+          Menggunakan neuron buatan dengan dua input, kita dapat membangun jaringan saraf paling sederhana: <strong>perceptron</strong>.
         </p>
         <p>
-          We are going to use it to distinguish between apple and banana.  To put it more formally, perceptron can do
-          <strong>binary classification</strong>.
+          Kita akan menggunakannya untuk membedakan apel dan pisang. Secara lebih formal, perceptron dapat melakukan
+          <strong>klasifikasi biner (binary classficiation)</strong>.
         </p>
       </div>
     </div>
@@ -124,10 +123,10 @@
     <div id="appanana2Text" class="scene topLayer bg-white">
       <div class="text right">
         <p>
-          To simplify the matter, let’s assume that only two characteristics differs between apple and banana: <strong>color and shape</strong>.
+          Untuk menyederhanakan masalahnya, mari kita asumsikan bahwa hanya dua karakteristik yang membedakan apel dan pisang: <strong>warna dan bentuk</strong>.
         </p>
         <p>
-          Apple is red and spherical, and banana is yellow and cylindrical.
+          Apple berwarna merah dan berbentuk bulat, sedang pisang berwarna kuning dan berbentuk silinder.
         </p>
       </div>
     </div>
@@ -135,11 +134,11 @@
     <div id="appanana3Text" class="scene topLayer bg-white">
       <div class="text right">
         <p>
-          The perceptron here receives two signals. The input on top receives a <strong>"sphere"</strong> signal,
-          and the one at the bottom receives a <strong>"red"</strong> signal.
+          Perceptron di sini menerima dua sinyal. Input di bagian atas menerima sinyal <strong>"bulat"</strong>,
+          dan yang di bagian bawah menerima sinyal <strong>"merah"</strong>.
         </p>
         <p>
-          These signals are sent to the artificial neuron in the center to be processed.
+          Sinyal-sinyal ini dikirim ke <strong>neuron</strong> <em>buatan</em> di bagian tengah untuk diproses.
         </p>
 
       </div>
@@ -148,8 +147,8 @@
     <div id="appanana4Text" class="scene topLayer bg-white">
       <div class="text right">
         <p>
-          The artificial neuron shakes itself and processes the signal.  It then outputs the signal to show the final result:
-          an <strong>apple</strong>.
+          Neuron buatan "mengubah" dirinya dan memroses sinyal. Kemudian ia mengeluarkan sinyal untuk menunjukkan hasil akhir:  
+		  sebuah <strong>apel</strong>.
         </p>
       </div>
     </div>
@@ -157,10 +156,10 @@
     <div id="appanana5Text" class="scene topLayer bg-white">
       <div class="text right">
         <p>
-          Similarly, a combination of <strong>"cylinder"</strong> and <strong>"yellow"</strong> signals are being input into the perceptron.
+          Demikian pula, kombinasi sinyal <strong>"silinder"</strong> dan <strong>"kuning"</strong> dimasukkan ke dalam perceptron.
         </p>
         <p>
-          These signals are again sent to the artificial neuron in the center to be processed.
+          Sinyal-sinyal ini dikirim ke <strong>neuron</strong> <em>buatan</em> di bagian tengah untuk diproses.
         </p>
 
       </div>
@@ -169,11 +168,11 @@
     <div id="appanana6Text" class="scene topLayer bg-white">
       <div class="text right">
         <p>
-          The result of this combination of signal is a <strong>banana</strong>!
+          Hasil dari kombinasi sinyal ini adalah <strong>pisang</strong>!
         </p>
         <p>
-          In the next chapter, we are going to take a look at <strong>how perceptrons can learn and distinguish</strong> between
-          appple and banana behind the scenes.
+          Di bab selanjutnya, kita akan melihat <strong>bagaimana perceptron dapat belajar dan membedakan</strong> antara
+          apel dan pisang.
         </p>
       </div>
     </div>
